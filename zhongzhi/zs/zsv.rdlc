@@ -869,8 +869,10 @@
   </Body>
   <Width>7.17659in</Width>
   <Page>
-    <PageHeight>29.7cm</PageHeight>
+    <PageHeight>60cm</PageHeight>
     <PageWidth>21cm</PageWidth>
+    <InteractiveHeight>60cm</InteractiveHeight>
+    <InteractiveWidth>21cm</InteractiveWidth>
     <LeftMargin>2cm</LeftMargin>
     <RightMargin>2cm</RightMargin>
     <TopMargin>2cm</TopMargin>

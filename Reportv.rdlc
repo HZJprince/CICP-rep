@@ -733,7 +733,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!c_dpt_cde.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -741,7 +741,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>department_id</rd:DefaultName>
@@ -767,9 +769,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>广州中支</Value>
+                              <Value>=Fields!c_dpt_abr.Value</Value>
                               <Style>
-                                <FontFamily>黑体</FontFamily>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
                                 <Color>#4d4d4d</Color>
                               </Style>
@@ -801,7 +803,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Microsoft.VisualBasic.Strings.FormatNumber(Fields!Expr1.Value)</Value>
+                              <Value>=FormatNumber(Fields!n_income.Value)</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -837,7 +839,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Expr2.Value</Value>
+                              <Value>=Fields!t_work_time.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -886,7 +888,21 @@
         </TablixRowHierarchy>
         <FixedColumnHeaders>true</FixedColumnHeaders>
         <FixedRowHeaders>true</FixedRowHeaders>
-        <DataSetName>IncomGZH</DataSetName>
+        <DataSetName>IncomQ</DataSetName>
+        <Filters>
+          <Filter>
+            <FilterExpression>=Fields!c_dpt_cde.Value</FilterExpression>
+            <Operator>In</Operator>
+            <FilterValues>
+              <FilterValue>4401</FilterValue>
+            </FilterValues>
+          </Filter>
+        </Filters>
+        <SortExpressions>
+          <SortExpression>
+            <Value>=Fields!c_dpt_cde.Value</Value>
+          </SortExpression>
+        </SortExpressions>
         <Top>3.69091cm</Top>
         <Height>1.49986cm</Height>
         <Width>16.61458cm</Width>
@@ -1084,15 +1100,18 @@
             <FilterExpression>=Fields!c_dpt_cde.Value</FilterExpression>
             <Operator>In</Operator>
             <FilterValues>
+              <FilterValue>440180</FilterValue>
               <FilterValue>440138</FilterValue>
               <FilterValue>440159</FilterValue>
               <FilterValue>440179</FilterValue>
-              <FilterValue>440180</FilterValue>
               <FilterValue>440187</FilterValue>
               <FilterValue>440188</FilterValue>
-              <FilterValue>440106</FilterValue>
               <FilterValue>440195</FilterValue>
               <FilterValue>440198</FilterValue>
+              <FilterValue>440169</FilterValue>
+              <FilterValue>440191</FilterValue>
+              <FilterValue>440192</FilterValue>
+              <FilterValue>440193</FilterValue>
             </FilterValues>
           </Filter>
         </Filters>
@@ -1141,7 +1160,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!c_dpt_cde.Value</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -1177,9 +1196,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!c_dpt_abr.Value</Value>
+                              <Value>番禺</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>黑体</FontFamily>
                                 <FontSize>14pt</FontSize>
                                 <Color>#4d4d4d</Color>
                               </Style>
@@ -1211,7 +1230,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Microsoft.VisualBasic.Strings.FormatNumber(Fields!n_income.Value)</Value>
+                              <Value>=Microsoft.VisualBasic.Strings.FormatNumber(Fields!Expr1.Value)</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -1247,7 +1266,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!t_work_time.Value</Value>
+                              <Value>=Fields!Expr2.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -1293,27 +1312,8 @@
         </TablixRowHierarchy>
         <FixedColumnHeaders>true</FixedColumnHeaders>
         <FixedRowHeaders>true</FixedRowHeaders>
-        <DataSetName>IncomQZS</DataSetName>
-        <Filters>
-          <Filter>
-            <FilterExpression>=Fields!c_dpt_cde.Value</FilterExpression>
-            <Operator>In</Operator>
-            <FilterValues>
-              <FilterValue>440148</FilterValue>
-              <FilterValue>440149</FilterValue>
-              <FilterValue>440189</FilterValue>
-              <FilterValue>440191</FilterValue>
-              <FilterValue>440192</FilterValue>
-              <FilterValue>440193</FilterValue>
-            </FilterValues>
-          </Filter>
-        </Filters>
-        <SortExpressions>
-          <SortExpression>
-            <Value>=Fields!c_id.Value</Value>
-          </SortExpression>
-        </SortExpressions>
-        <Top>6.95521cm</Top>
+        <DataSetName>IncomGZH</DataSetName>
+        <Top>6.07299cm</Top>
         <Left>0.00001cm</Left>
         <Height>0.88222cm</Height>
         <Width>16.61458cm</Width>
