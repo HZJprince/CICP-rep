@@ -75,6 +75,14 @@
                                     <td><asp:Button ID="Button5" runat="server" Height="30px" Text="启动" Width="80px" OnClick="Button5_Click" /></td>
                                     <td><asp:Button ID="Button6" runat="server" Height="30px" Text="结束" Width="80px" OnClick="Button6_Click" /></td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/zhongzhi/zh/zh.aspx">珠海中支</asp:HyperLink>
+                                    </td>
+                                    <td><asp:Label ID="Label1" runat="server" Font-Size="X-Large" style="font-weight: 700; color: #FF0000" Text="程序没有运行"></asp:Label></td>
+                                    <td><asp:Button ID="Button7" runat="server" Height="30px" Text="启动" Width="80px" OnClick="Button7_Click" /></td>
+                                    <td><asp:Button ID="Button8" runat="server" Height="30px" Text="结束" Width="80px" OnClick="Button8_Click" /></td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
