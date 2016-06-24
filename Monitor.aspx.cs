@@ -11,11 +11,13 @@ public partial class Monitor : System.Web.UI.Page
     static string dpt1 = "CICPreportGD";
     static string dpt2 = "CICPreportDG";
     static string dpt3 = "CICPreportZS";
+    static string dpt4 = "CICPreportZH";
     protected void Page_Load(object sender, EventArgs e)
     {
         Pro(dpt1);
         Pro(dpt2);
         Pro(dpt3);
+        Pro(dpt4);
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -107,6 +109,36 @@ public partial class Monitor : System.Web.UI.Page
             Pro(dpt3);
         }
     }
+    protected void Button7_Click(object sender, EventArgs e)
+    {
+        string pathstr = "D:\\CICPreport\\CICPreportZH.exe";
+        ProcessStartInfo pro = new ProcessStartInfo();
+        pro.FileName = pathstr;
+        Process.Start(pro);
+        Pro(dpt4);
+    }
+    protected void Button8_Click(object sender, EventArgs e)
+    {
+        Process[] processeslist = Process.GetProcessesByName("CICPreportZH");
+        if (processeslist.Length > 0)
+        {
+            if (processeslist[0].ProcessName == "CICPreportZH")
+            {
+                Process process = new Process();
+                process = processeslist[0];
+                process.Kill();
+                Label1.Text = "统计程序已结束";
+            }
+            else
+            {
+                Pro(dpt4);
+            }
+        }
+        else
+        {
+            Pro(dpt4);
+        }
+    }
     protected void Pro(string dpt)
     {
         String mark = "";
@@ -148,6 +180,16 @@ public partial class Monitor : System.Web.UI.Page
                 else
                 {
                     Label4.Text = "程序没有运行";
+                }
+                break;
+            case "CICPreportZH":
+                if (mark == "Y")
+                {
+                    Label1.Text = "统计程序运行中";
+                }
+                else
+                {
+                    Label1.Text = "程序没有运行";
                 }
                 break;
         }
