@@ -380,6 +380,7 @@
             <FilterExpression>=Fields!c_dpt_cde.Value</FilterExpression>
             <Operator>In</Operator>
             <FilterValues>
+              <FilterValue>4404</FilterValue>
               <FilterValue>44041802</FilterValue>
               <FilterValue>44041801</FilterValue>
               <FilterValue>44040101</FilterValue>
@@ -394,7 +395,6 @@
               <FilterValue>44040129</FilterValue>
               <FilterValue>44040128</FilterValue>
               <FilterValue>44040127</FilterValue>
-              <FilterValue>44040126</FilterValue>
             </FilterValues>
           </Filter>
         </Filters>
@@ -760,6 +760,7 @@
             <FilterExpression>=Fields!c_dpt_cde.Value</FilterExpression>
             <Operator>In</Operator>
             <FilterValues>
+              <FilterValue>44040126</FilterValue>
               <FilterValue>44040125</FilterValue>
               <FilterValue>44040123</FilterValue>
               <FilterValue>44040122</FilterValue>
